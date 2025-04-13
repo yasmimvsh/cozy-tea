@@ -1,0 +1,298 @@
+/* gerais */
+
+    :root {
+        --bg-color: #560606;
+        --main-text-color: #f1e7e4;
+        --base-font-size: 16px;
+        --base-width: 1280px;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        height: 100%;
+        width: 100%;
+        background-color: var(--bg-color);
+        color: var(--main-text-color);
+        font-size: calc(1vw * var(--base-font-size) / var(--base-width));
+    }
+
+    .container {
+        width: var(--base-width);
+        margin: 0 auto;
+    } 
+
+    h2 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 2rem;
+    }
+
+    h3, h4, h5, li, a, p {
+        font-family: 'Montserrat', 'Helvetica', sans-serif;
+        font-size: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--main-text-color);
+        transition: border-bottom 400ms ease-in;
+    }
+
+    a[href^="#"]:hover {
+        border-bottom: 0.0625rem solid var(--main-text-color);
+    } /* ^= in CSS targets elements with an attribute value that starts with a specific string. in this case, elements whose href attribute starts with # */
+         
+    
+/* scrollbar */
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 20px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 2.5px #c49d9d; 
+        border-radius: 5px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: var(--main-text-color); 
+        border-radius: 5px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #c49d9d; 
+    }
+
+
+/* nav */
+
+    nav {
+        height: 80px;
+        display: flex;
+    }
+
+
+    nav ul {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+
+    nav ul::before, nav ul::after {
+        content: '';
+        display: flex;
+        height: 0.125rem;
+        width: 20%;
+        background-color: var(--main-text-color);
+    }
+
+    nav ul li img {
+        height: 3.125rem;
+    }
+
+
+/* mission */    
+
+    #mission {
+        margin-top: 0;
+        height: 700px;
+        width: 100%;
+        background-image: url(../codecademy-tea-cozy/img-mission-background.jpg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--bg-color);
+    }
+
+    #mission .glass-banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 33%;
+        max-width: 33%;
+        background-color: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(5px);
+        box-shadow: 5px 5px 30px rgba(67, 4, 4, 0.4);
+        border: 0.0625rem solid rgba(255, 255, 255, 0.5);
+        border-radius: 1rem;
+    }
+
+    .glass-banner .glass-banner-text {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        text-align: center;
+    }
+
+    .glass-banner .glass-banner-text h2, 
+    .glass-banner .glass-banner-text h4 {
+        margin: 3%;
+    }
+
+    .glass-banner .glass-banner-text::before {
+        content: '';
+        width: 15%;
+        height: 0.125rem;
+        background-color: var(--bg-color);
+        margin: 0 auto;
+    }
+
+
+/* featured tea */
+
+    #feat-tea {
+        display: flex;
+        flex-direction: column;
+        margin: 4.5rem auto;
+        max-width: 1000px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #feat-tea .heading h2 {
+        padding-bottom: 1rem;
+    }
+
+    #feat-tea .heading h4 {
+        padding-bottom: 2rem;
+    }
+
+    #feat-tea .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    #feat-tea .gallery .feature {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-items: center;
+        gap: 1rem;
+    }
+    
+    #feat-tea .gallery .feature:hover {
+        cursor: pointer;
+    }
+
+    #feat-tea .gallery .feature:hover img {
+        border: 0.125rem solid var(--main-text-color);
+    }
+
+    #feat-tea .gallery .feature:hover h4 {
+        font-style: italic;
+    }
+
+    #feat-tea .gallery .feature img {
+        width: 300px;
+        height: 200px;
+        border: 0.125rem solid transparent; /* para previnir que a imagem encolha ao aparecer a borda no hover */
+    }
+
+
+/* locations */
+
+    #locations {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-image: url(../codecademy-tea-cozy/img-locations-background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #locations .heading h2 {
+        padding-top: 4.5rem;
+        font-size: 2.3rem;
+        color: var(--bg-color);
+        text-shadow: -1px 0 var(--main-text-color), 1px 0 var(--main-text-color), 0 -1px var(--main-text-color), 0 1px var(--main-text-color);
+    }
+
+    #locations .location-card-container {
+        display: flex;                                   /* G-A-M-B-I-A-R-R-A */
+        align-items: center;
+        justify-content: center;
+        gap: 1.6rem;
+        flex-grow: 1; /* tenho que entender melhor isso aqui */
+        padding-bottom: 5rem;
+    }
+
+    #locations .location-card-container .location-card {
+       height: 200px;
+       width: 300px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       background-color:  var(--bg-color);
+       box-shadow: 5px 5px 10px rgba(67, 4, 4, 0.5);
+       border: 0.0625rem solid rgba(255, 255, 255, 0.5);
+       border-radius: 1rem;
+       gap: 0.5rem;
+    }
+
+    #locations .location-card h3 {
+        padding-bottom: 1rem;
+    }
+
+
+/* footer */
+
+    footer {
+        margin: 4.5rem auto;
+    }
+
+    footer .main-footer {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15%;
+    }
+
+    footer .copyright {
+        display: flex;
+        height: 50px;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer .copyright h5 {
+        display: flex;
+        justify-content: flex-start;
+        white-space: nowrap;
+    }
+
+    footer .copyright a {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    footer .copyright a img {
+        width: 1.5%;
+    }
+
+    
+
+
+

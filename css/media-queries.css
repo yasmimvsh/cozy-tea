@@ -1,0 +1,323 @@
+/* media queries */
+
+/* phone */
+
+@media screen and (max-width: 480px){
+
+    nav {
+        display: flex;
+        height: 820px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10% auto;
+    }
+
+    nav ul::before, nav ul::after {
+        display: none;
+    }
+
+    nav ul li a {
+        font-size: 2.5rem;
+    }
+
+    nav ul li img {
+        height: 6rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    #mission {
+        height: 900px;
+    }
+
+    #mission .glass-banner {
+       height: 70%;
+       max-width: 80%;
+    }
+
+    .glass-banner .glass-banner-text::before {
+        height: 0.2rem;
+    }
+
+    #feat-tea .heading {
+        padding-bottom: 5%;
+    }
+
+    #feat-tea .gallery .feature {
+        width: 100%;
+        flex-direction: row;
+        padding-bottom: 5%;
+    }
+
+    #feat-tea .gallery .feature h4{
+        padding-top: 2%;
+    }
+
+    #feat-tea .gallery .feature img{
+        width: 100%;
+        height: auto;
+    }
+
+    #locations {
+        height: 900px;
+    }
+
+    #locations .heading h2 {
+        font-size: 3.5rem;
+        padding-bottom: 15%;
+    }
+
+    #locations .location-card-container {
+        width: 80%;
+        gap: 4%;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+
+    #locations .location-card-container .location-card {
+        width: 400px;
+        height: 300px;
+    }
+
+    #mondrian {
+        height: 1480px;
+    }
+
+}
+
+/* tablet */
+
+@media screen and (max-width: 768px){
+
+    nav {
+        display: flex;
+        height: 120px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10% auto;
+    }
+
+    nav ul::before, nav ul::after {
+        display: none;
+    }
+
+    nav ul li a {
+        font-size: 2rem;
+    }
+
+    nav ul li img {
+        height: 5rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    #mission {
+        height: 900px;
+    }
+
+    #mission .glass-banner {
+       height: 70%;
+       max-width: 80%;
+    }
+
+    .glass-banner .glass-banner-text::before {
+        height: 0.2rem;
+    }
+
+    #feat-tea .heading {
+        padding-bottom: 5%;
+    }
+
+    #feat-tea .gallery .feature {
+        width: 100%;
+        flex-direction: row;
+        padding-bottom: 5%;
+    }
+
+    #feat-tea .gallery .feature h4{
+        padding-top: 2%;
+    }
+
+    #feat-tea .gallery .feature img{
+        width: 100%;
+        height: auto;
+    }
+
+    #locations {
+        height: 900px;
+    }
+
+    #locations .heading h2 {
+        font-size: 3.5rem;
+        padding-bottom: 15%;
+    }
+
+    #locations .location-card-container {
+        width: 80%;
+        gap: 4%;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+
+    #locations .location-card-container .location-card {
+        width: 400px;
+        height: 300px;
+    }
+
+}
+
+/* tablet landscape */
+
+@media screen and (max-width: 1024px){
+
+    nav {
+        display: flex;
+        height: 100px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 10% auto;
+    }
+
+    nav ul::before, nav ul::after {
+        display: none;
+    }
+
+    nav ul li a {
+        font-size: 1.8rem;
+    }
+
+    nav ul li img {
+        height: 4.5rem;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    h5 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    #mission {
+        height: 800px;
+    }
+
+    #mission .glass-banner {
+       height: 70%;
+       max-width: 80%;
+    }
+
+    .glass-banner .glass-banner-text::before {
+        height: 0.2rem;
+    }
+
+    #feat-tea .heading {
+        padding-bottom: 5%;
+    }
+
+
+    #feat-tea .gallery .feature h4{
+        padding-top: 2%;
+        font-size: 1.5rem;
+    }
+
+    #locations {
+        height: 900px;
+    }
+
+    #locations .heading h2 {
+        font-size: 3.5rem;
+        padding-bottom: 15%;
+    }
+
+    #locations .location-card-container {
+        width: 80%;
+        gap: 4%;
+        flex-wrap: wrap;
+        flex-grow: 1;
+    }
+
+    #locations .location-card-container .location-card {
+        width: 400px;
+        height: 300px;
+    }
+
+}
+
+/* print */
+
+@media print {
+
+    nav ul li a[href^="#"] {
+        display: none;
+    }  
+                         
+    nav ul::before, nav ul::after {
+        content: '';
+        display: flex;
+        height: 0.125rem;
+        width: 40%;
+        background-color: var(--main-text-color);
+    }
+}
