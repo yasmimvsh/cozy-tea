@@ -109,6 +109,9 @@
         height: 700px;
         width: 100%;
         background-image: url(../codecademy-tea-cozy/img-mission-background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
