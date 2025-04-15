@@ -124,8 +124,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 33%;
-        max-width: 33%;
+        height: 38%;
+        max-width: 35%;
         background-color: rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(5px);
         border: 0.0625rem solid rgba(255, 255, 255, 0.6);
