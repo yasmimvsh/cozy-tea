@@ -16,8 +16,8 @@
     html, body {
         height: 100%;
         width: 100%;
-        background-color: var(--bg-color);
-        color: var(--main-text-color);
+        background-color: var(--main-text-color);
+        color: var(--bg-color);
         font-size: calc(1vw * var(--base-font-size) / var(--base-width));
     }
 
@@ -77,6 +77,7 @@
     nav {
         height: 80px;
         display: flex;
+        background-color: var(--bg-color);
     }
 
 
@@ -193,7 +194,7 @@
     }
 
     #feat-tea .gallery .feature:hover img {
-        border: 0.125rem solid var(--main-text-color);
+        border: 0.125rem solid var(--bg-color);
     }
 
     #feat-tea .gallery .feature:hover h4 {
@@ -245,6 +246,7 @@
        justify-content: center;
        align-items: center;
        background-color:  var(--bg-color);
+       color: var(--main-text-color);
        box-shadow: 5px 5px 10px rgba(67, 4, 4, 0.5);
        border: 0.0625rem solid rgba(255, 255, 255, 0.5);
        border-radius: 1rem;
@@ -260,6 +262,12 @@
 
     footer {
         margin: 4.5rem auto;
+        background-color: var(--bg-color);
+        color: var(--main-text-color);
+    }
+
+    footer .container {
+        padding-top: 52px;
     }
 
     footer .main-footer {
