@@ -18,7 +18,7 @@
         width: 100%;
         background-color: var(--main-text-color);
         color: var(--bg-color);
-        font-size: calc(1vw * var(--base-font-size) / var(--base-width));
+        font-size: 1rem;
     }
 
     .container {
